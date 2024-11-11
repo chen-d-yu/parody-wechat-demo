@@ -1,0 +1,111 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/start/start-up",
+      "name": "start",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "启动页"
+      }
+    },
+    {
+      "path": "pages/group/index",
+      "name": "group",
+      "style": {
+        "navigationBarTitleText": "微信",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/contact/index",
+      "name": "login",
+      "style": { "navigationStyle": "custom", "navigationBarTitleText": "微信" }
+    },
+    {
+      "path": "pages/find/index",
+      "name": "login",
+      "style": { "navigationStyle": "custom", "navigationBarTitleText": "发现" }
+    },
+    {
+      "path": "pages/mine/index",
+      "name": "login",
+      "style": {
+        "navigationBarTitleText": "我",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/wx",
+      "name": "wx",
+      "pages": [
+        {
+          "path": "search/index",
+          "name": "wx-search",
+          "style": {
+            "navigationBarTitleText": "微信"
+          }
+        },
+        {
+          "path": "im/index",
+          "name": "wx-im",
+          "style": {
+            "navigationBarTitleText": "微信",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "miniProgram/index",
+          "name": "wx-miniProgram",
+          "style": {
+            "navigationBarTitleText": "微信",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/provident",
+      "name": "provident",
+      "pages": [
+        {
+          "path": "index/index",
+          "name": "provident-index",
+          "style": {
+            "navigationBarTitleText": "微信",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    }
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#333",
+    "selectedColor": "#19BE6B",
+    "fontSize": "12px",
+    "list": []
+  },
+  "usingComponents": {},
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "徽信",
+    "navigationBarBackgroundColor": "#f0f0f0",
+    "backgroundColor": "#f0f0f0",
+    "backgroundTextStyle": "light",
+    "pageOrientation": "auto",
+    "app-plus": {
+      "scrollIndicator": "none",
+      "bounce": "none"
+    }
+  }
+}
