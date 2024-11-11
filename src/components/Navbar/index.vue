@@ -4,6 +4,8 @@
     :bgColor="bgColor"
     :placeholder="placeholder"
     :leftIcon="getLeftIcon"
+    left-icon-color="#fff"
+    :titleStyle="titleStyle"
     @leftClick="handleLeftIconClick"
   >
   </u-navbar>
@@ -15,6 +17,7 @@ interface IProps {
   title: string;
   bgColor?: string;
   placeholder?: boolean;
+  titleStyle?: string | object;
 }
 withDefaults(defineProps<IProps>(), {
   title: "",

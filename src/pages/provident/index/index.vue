@@ -42,7 +42,7 @@
             </view>
           </view>
           <view class="item" v-else>
-            <view class="need-login">
+            <view class="need-login" @click="handleLogin">
               <view class="btn">立即登录</view>
             </view>
           </view>
@@ -167,6 +167,12 @@ const bannerList = ref([
 const height = computed(() => {
   return useCommonStore.statusBarHeight * 2 + "rpx";
 });
+
+const handleLogin = async () => {
+  uni.navigateTo({
+    url: `/pages/provident/login/index`,
+  });
+};
 </script>
 
 <style lang="scss" scoped>
@@ -396,7 +402,8 @@ const height = computed(() => {
 }
 
 .logo {
-  width: 100%;
+  width: 100rpx;
+
   padding-bottom: 20rpx;
   image {
     width: 100%;

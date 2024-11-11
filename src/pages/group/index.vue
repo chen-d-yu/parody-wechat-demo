@@ -198,7 +198,9 @@ watch(
   () => useCommonStore.currentIndex,
   (val) => {
     console.log("val", val);
-    canvasStart();
+    nextTick(() => {
+      canvasStart();
+    });
   },
   {
     immediate: true,

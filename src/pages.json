@@ -84,6 +84,14 @@
             "navigationBarTitleText": "微信",
             "navigationStyle": "custom"
           }
+        },
+        {
+          "path": "login/index",
+          "name": "login-index",
+          "style": {
+            "navigationBarTitleText": "登录",
+            "navigationStyle": "custom"
+          }
         }
       ]
     }
